@@ -15,6 +15,16 @@ Application of All-in-Focus image processing created by Python (OpenCV Python, N
 
 If there is more than two files, image in the next iteration will be result of fused images from previous iteration. At the end save output .png file with fused images.  
 
+## Setup
+First install the dependencies (required packages) using following command:
+```shell
+pip3 install -r requirements.txt
+```
+Then run main .py script using command:
+```shell
+python all_in_focus.py
+```
+
 ## Example result
 ### Input data:
 | 1st image | 2nd image | 3rd image | 4th image |
