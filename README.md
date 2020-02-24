@@ -39,6 +39,6 @@ python all_in_focus.py
 ## References
 | No. | Reference | Source |
 |:---:|:---:|:---:|
-| 1. | "A Computationally Efficient Algorithm for Multi-Focus Image Reconstruction" </br> Authors: Helmy A. Eltoukhy and Sam Kavusi | [URL](https://www.researchgate.net/publication/228797652_A_computationally_efficient_algorithm_for_multi-focus_image_reconstruction) |
+| 1. | Implementation of algorithm based on "A Computationally Efficient Algorithm for Multi-Focus Image Reconstruction"  scientific work from Electrical Engineering Department of Stanford University </br> Authors: Helmy A. Eltoukhy and Sam Kavusi | [URL](https://www.researchgate.net/publication/228797652_A_computationally_efficient_algorithm_for_multi-focus_image_reconstruction) |
 | 2. | Grayscale images data </br> Author: Samet Aymaz | [URL](https://github.com/sametaymaz/Multi-focus-Image-Fusion-Dataset) |
-| 3. | RGB images data </br> Authors from University of Washington  Graphics and Imaging Laboratory | [URL](http://grail.cs.washington.edu/projects/photomontage/) |
+| 3. | RGB images data </br> Authors from the Graphics and Imaging Laboratory of the University of Washington | [URL](http://grail.cs.washington.edu/projects/photomontage/) |
