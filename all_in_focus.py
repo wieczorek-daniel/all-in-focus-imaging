@@ -14,8 +14,8 @@ import warnings
 def rgb_image():
     for dim in range(image_size[2]):
         # i represents row number, j represents col number, dim represents dimension number
-        for i in range(1, image_size[0]):
-            for j in range(1, image_size[1]):
+        for i in range(image_size[0]):
+            for j in range(image_size[1]):
                 # Calculate gradient for each pixel of image
                 grad[i, j, dim] = abs(grad_x[i, j, dim]) + abs(grad_y[i, j, dim])
                 # Calculate gradient for each pixel of next image
@@ -30,8 +30,8 @@ def rgb_image():
         # β parameter - the best results for β about 0.1
         beta = 0.1
 
-        for i in range(1, image_size[0]):
-            for j in range(1, image_size[1]):
+        for i in range(image_size[0]):
+            for j in range(image_size[1]):
                 # Calculate sigmoid filter function for each pixel (approximately 0 or 1 values)
                 image_filter[i, j, dim] = (1 / (1 + np.exp(-beta * image_filter[i, j, dim])))
                 ''' Choose better pixel - if image_filter[i, j] ≈ 0 take pixel from image, 
@@ -43,8 +43,8 @@ def rgb_image():
 # Function for All-in-Focus grayscale images (dim = 1)
 def grayscale_image():
     # i represents row number, j represents col number
-    for i in range(1, image_size[0]):
-        for j in range(1, image_size[1]):
+    for i in range(image_size[0]):
+        for j in range(image_size[1]):
             # Calculate gradient for each pixel of image
             grad[i, j] = abs(grad_x[i, j]) + abs(grad_y[i, j])
             # Calculate gradient for each pixel of next image
@@ -59,8 +59,8 @@ def grayscale_image():
     # β parameter - the best results for β about 0.1
     beta = 0.1
 
-    for i in range(1, image_size[0]):
-        for j in range(1, image_size[1]):
+    for i in range(image_size[0]):
+        for j in range(image_size[1]):
             # Calculate sigmoid filter function for each pixel (approximately 0 or 1 values)
             image_filter[i, j] = (1 / (1 + np.exp(-beta * image_filter[i, j])))
             ''' Choose better pixel - if image_filter[i, j] ≈ 0 take pixel from image, 
